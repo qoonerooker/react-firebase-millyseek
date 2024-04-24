@@ -1,5 +1,11 @@
-### サーバー立ち上げ
+### ローカルサーバー立ち上げ
 `npm run dev`
+### GoogleHostingにデプロイ
+【確認URL】 => `https://react-firebase-millyseek.web.app/`
+
+`yarn build`
+
+`firebase deploy`
 
 ---
 # React + TypeScript + Vite
