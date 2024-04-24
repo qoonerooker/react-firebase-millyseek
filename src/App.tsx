@@ -1,24 +1,25 @@
-import { useState, useEffect } from "react";
-import { collection, getDocs } from "firebase/firestore";
-import { db } from "../firebase";
+// import { useState, useEffect } from "react";
+// import { collection, getDocs } from "firebase/firestore";
+// import { db } from "../firebase";
 
 function App() {
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    const usersCollectionRef = collection(db, "users");
-    getDocs(usersCollectionRef).then((querySnapshot) => {
-      setUsers(
-        querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
-      );
-    });
-  }, []);
+  // useEffect(() => {
+  //   const usersCollectionRef = collection(db, "users");
+  //   getDocs(usersCollectionRef).then((querySnapshot) => {
+  //     setUsers(
+  //       querySnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+  //     );
+  //   });
+  // }, []);
 
   return (
     <div>
-      {users.map((user) => (
+      テスト
+      {/* {users.map((user) => (
         <div key={user.id}>{user.name}</div>
-      ))}
+      ))} */}
     </div>
   );
 }
